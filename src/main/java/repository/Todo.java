@@ -1,4 +1,4 @@
-package src.main.java;
+package src.main.java.repository;
 
 import src.main.java.Todo;
 import org.springframework.data.repository.CrudRepository;
