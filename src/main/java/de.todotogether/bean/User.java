@@ -13,7 +13,6 @@ public class User{
 			
 			private String name;
 			private String teamname;
-			private int activeProject;
 			
 			public User() {
 			}
@@ -23,17 +22,11 @@ public class User{
 					this.id = id;
 					this.name = name;
 					this.teamname = teamname;
-					this.activeProject = activeProject;
 			}
 			
 			public Long getId()
 			{
 					return id;			
-			}
-			
-			public void setId(Long id)
-			{
-					this.id = id;
 			}
 			
 			public String getName()
@@ -54,15 +47,5 @@ public class User{
 			public void setTeamname(String teamname)
 			{
 					this.teamname = teamname;			
-			}
-			
-			public int getActiveProject()
-			{
-					return activeProject;
-			}
-			
-			public void setActiveProject(int activeProject)
-			{
-					this.activeProject = activeProject;
 			}
 }

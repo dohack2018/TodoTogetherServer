@@ -12,24 +12,22 @@ public class Todo{
 			private Long id;
 			
 			private String name;
+
+			private String activeTeamId;
 			
 			public Todo() {
 			}
 			
-			public Todo(Long id, String name)
+			public Todo(Long id, String name, String activeTeamId)
 			{
 					this.id = id;
-					this.name = name;	
+					this.name = name;
+					this.activeTeamId = activeTeamId;
 			}
 			
 			public Long getId()
 			{
 					return id;			
-			}
-			
-			public void setId(Long id)
-			{
-					this.id = id;
 			}
 			
 			public String getName()
@@ -41,5 +39,9 @@ public class Todo{
 			{
 					this.name = name;
 			}
+
+			public String getActiveTeamId() { return activeTeamId; }
+
+			public void setActiveTeamId(String activeTeamId) { this.activeTeamId = activeteamid; }
 			
 }
