@@ -3,6 +3,7 @@ package src.main.java.service;
 import src.main.java.Todo;
 import java.util.List;
 
+@Service
 public interface ITodoService {
 
     public List<Todo> findAll();

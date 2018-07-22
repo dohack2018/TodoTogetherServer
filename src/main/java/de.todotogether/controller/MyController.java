@@ -1,21 +1,23 @@
-package src.main.java.controller;	
+package de.todotogether.controller;
 
-import src.main.java.bean.User;
-import src.main.java.bean.Todo;
-import src.main.java.service.iUserService;
-import src.main.java.service.iTodoService;
+import de.todotogether.bean.User;
+import de.todotogether.bean.Todo;
+
 import java.util.List;
+
+import de.todotogether.service.ITodoService;
+import de.todotogether.service.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class MyController
 {
 		@Autowired
-		private iUserService userservice;
-		private iTodoService todoservice;
+		private IUserService userservice;
+		private ITodoService todoservice;
 		
 		@GetMapping("/showUser")
 		public String findUser(Model model)

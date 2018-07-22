@@ -1,6 +1,6 @@
-package src.main.java.repository;
+package de.todotogether.repository;
 
-import src.main.java.bean.User;
+import de.todotogether.bean.User;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

@@ -1,9 +1,7 @@
+package de.todotogether.bean;
+
 import java.util.Objects;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GeneratedType;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "USER")
@@ -15,17 +13,17 @@ public class User{
 			
 			private String name;
 			private String teamname;
-			private List<int> activeProjects = new ArrayList<int>(); 
+			private int activeProject;
 			
 			public User() {
 			}
 			
-			public User(Long id, String name, String teamname, int[] activeProjects)
+			public User(Long id, String name, String teamname, int activeProject)
 			{
 					this.id = id;
 					this.name = name;
 					this.teamname = teamname;
-					this.activeProjects = ;
+					this.activeProject = activeProject;
 			}
 			
 			public Long getId()
@@ -45,7 +43,7 @@ public class User{
 			
 			public void setName(String name)
 			{
-					this.name = name			
+					this.name = name;		
 			}
 			
 			public String getTeamname()
@@ -58,13 +56,13 @@ public class User{
 					this.teamname = teamname;			
 			}
 			
-			public int[] getActiveProjects()
+			public int getActiveProject()
 			{
-					return activeProjects;
+					return activeProject;
 			}
 			
-			public void setActiveProjects(int[] activeProjects)
+			public void setActiveProject(int activeProject)
 			{
-					this.activeProjects.add(activeProjects[-1]);			
+					this.activeProject = activeProject;
 			}
 }
